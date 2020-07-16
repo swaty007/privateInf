@@ -1,0 +1,21 @@
+.nav-lang {
+  background-color: transparent;
+  padding: 10px 0;
+  &--item {
+    a {
+      color: @color-1;
+      transition: 0.3s all;
+      text-transform: uppercase;
+      &:hover {
+        color: @color-brand;
+        background-color: transparent!important;
+      }
+    }
+    &.active {
+      a {
+        background-color: @color-1!important;
+        color: @color-2!important;
+      }
+    }
+  }
+}
