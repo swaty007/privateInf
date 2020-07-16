@@ -67,7 +67,7 @@ $config = [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'class' => 'app\messages\UrlManager',
-            'languages' => ['ru' => 'ru-RU', 'en' => 'en-US', 'uk' => 'uk-UA', 'de', 'cn' => 'zh-CN'],
+            'languages' => ['ru' => 'ru-RU', 'en' => 'en-US', 'de', 'cn' => 'zh-CN', 'kn', 'sk', 'iw', 'es', 'it', 'uk' => 'uk-UA', 'ja', 'ro'],
             'enableDefaultLanguageUrlCode' => false,
             'rules' => [
                 '/' => 'site/index',

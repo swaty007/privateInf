@@ -212,7 +212,7 @@ class SiteController extends Controller
                     ->setFrom('info@infinitum.tech')
                     ->setTo($r->notify_email)
                     ->setSubject('Сообщение успешно удаленно')
-                    ->setHtmlBody("<p>Ваще сообщение с ключем <b>show?k=$r->link</b> было успешно просмотренно и удаленно</p>")
+                    ->setHtmlBody("<p>Your message with key <b>show?k=$r->link</b> was successfully viewed and deleted.</p>")
                     ->send();
             }
             $r->delete();
