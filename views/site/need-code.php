@@ -1,3 +1,8 @@
+<?php
+$this->title = Yii::t('app', 'Для доступа необходим пароль');
+Yii::$app->view->registerMetaTag(['name' => 'title', 'content' => $this->title], 'title');
+Yii::$app->view->registerMetaTag(['property' => 'og:title', 'content' => $this->title], 'og:title');
+;?>
 <div class="col-md-6 col-sm-6 text-center">
 
     <div class="panel panel-warning">

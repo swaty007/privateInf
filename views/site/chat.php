@@ -1,8 +1,8 @@
 
-<?//
-//if(extension_loaded('sockets')) echo "WebSockets OK";
-//else echo "WebSockets UNAVAILABLE";
-//
+<?
+$this->title = Yii::t('app', 'Просмотр чата №').' c-'.$chat;
+Yii::$app->view->registerMetaTag(['name' => 'title', 'content' => $this->title], 'title');
+Yii::$app->view->registerMetaTag(['property' => 'og:title', 'content' => $this->title], 'og:title');
 use yii\helpers\Url; ?>
 
 

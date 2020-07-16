@@ -21,9 +21,21 @@ AppAsset::register($this);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
+
+
+    <?php foreach (Yii::$app->urlManager->languages as $language): ?>
+        <link rel="alternate" href="<?= Url::to([Yii::$app->controller->route, 'language' => $language], true);?>" hreflang="<?=$language;?>">
+    <?php endforeach;?>
+    <link rel="alternate" href="<?= Url::to([Yii::$app->controller->route], true);?>" hreflang="x-default" />
+
+    <?php
+    Yii::$app->view->registerMetaTag(['property' => 'og:url', 'content' => Url::to([Yii::$app->controller->route, 'language' => Yii::$app->language], true)], 'og:url');
+    Yii::$app->view->registerMetaTag(['property' => 'og:image', 'content' => \yii\helpers\Url::to('@web/img/logo.png', true)], 'og:image');
+    Yii::$app->view->registerMetaTag(['property' => 'twitter:image', 'content' => \yii\helpers\Url::to('@web/img/logo.png', true)], 'twitter:image');
+    ?>
     <?php $this->head() ?>
 
-    <link href="/web/css/main.less" rel="stylesheet/less" type="text/css">
+<!--    <link href="/web/css/main.less" rel="stylesheet/less" type="text/css">-->
 
 
 <!-- Global site tag (gtag.js) - Google Analytics -->

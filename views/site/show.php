@@ -1,11 +1,8 @@
-<!--<pre>-->
-<!---->
 <?php
-//var_dump($item)
-//
+$this->title = Yii::t('app', 'Просмотр записки №').$item->id;
+Yii::$app->view->registerMetaTag(['name' => 'title', 'content' => $this->title], 'title');
+Yii::$app->view->registerMetaTag(['property' => 'og:title', 'content' => $this->title], 'og:title');
 use yii\helpers\Url; ?>
-<!---->
-<!--</pre>-->
 
 
 <div class="col-md-12 col-sm-12">

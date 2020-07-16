@@ -3,6 +3,15 @@
 /* @var $this yii\web\View */
 
 $this->title = Yii::t('app', 'Сервис приватных сообщений');
+$desc = Yii::t('app', 'Онлайн-сервис Private Service позволяет отправлять сообщения, которые будут автоматически уничтожены после их прочтения. Восстановить такое письмо невозможно.');
+$keywords = Yii::t('app', 'личная служба, безопасный чат, зашифрованный чат, безопасные заметки, приватная заметка, личная заметка, поделиться заметкой, поделиться файлом, зашифрованные заметки, бесконечная технология, самоуничтожение, заметки самоуничтожения, файл самоуничтожения, безопасные заметки, зашифрованные файлы, зашифрованные заметки, отправить зашифрованный');
+Yii::$app->view->registerMetaTag(['name' => 'title', 'content' => $this->title], 'title');
+Yii::$app->view->registerMetaTag(['name' => 'keywords', 'content' => $keywords], 'keywords');
+Yii::$app->view->registerMetaTag(['name' => 'description', 'content' => $desc], 'description');
+
+Yii::$app->view->registerMetaTag(['property' => 'og:title', 'content' => $this->title], 'og:title');
+Yii::$app->view->registerMetaTag(['property' => 'og:description', 'content' => $desc], 'og:description');
+
 
 use yii\helpers\Url; ?>
 

@@ -114,6 +114,216 @@ a.desc:after {
     outline: none;
 }
 
-
-
-
+body {
+    background-color: #000000;
+    color: #fff;
+}
+.jumbotron {
+    margin-bottom: 0;
+}
+input {
+    max-width: 100%;
+    -moz-user-select: text;
+    -webkit-user-select: text;
+    white-space: nowrap;
+}
+.tooltip-inner {
+    color: #000000;
+    text-align: center;
+    background-color: #fff;
+}
+.tooltip.right .tooltip-arrow {
+    border-right-color: #fff;
+}
+.copy-text {
+    cursor: pointer;
+    width: 100%;
+}
+.textarea {
+    position: relative;
+    max-width: 100%;
+}
+.textarea textarea {
+    max-width: 100%;
+    min-height: 35px;
+    resize: vertical;
+}
+.textarea:after {
+    overflow: visible;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    transition: all 1s;
+    border-bottom: 40px solid #eee;
+    border-right: 40px solid #000;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.3);
+}
+.buttons_main_page {
+    margin: 20px 10px;
+}
+.buttons_main_page button:first-child {
+    float: left;
+}
+.buttons_main_page button:last-child {
+    float: right;
+}
+.private-header a {
+    text-decoration: none;
+    color: #fff;
+    outline: none;
+}
+.btn-take-post {
+    color: #fff;
+    background-color: #337ab7;
+    border: 1px solid #ccc;
+}
+.btn-take-post:hover {
+    background-color: #286090;
+    border: 1px solid #ccc;
+    border-left: 0;
+}
+.btn-create-chat {
+    color: #fff;
+    background-color: #5cb85c;
+    border: 1px solid #ccc;
+}
+.btn-create-chat:hover {
+    background-color: #449d44;
+    border: 1px solid #ccc;
+    border-left: 0;
+}
+.w3-note {
+    background-color: #ffffcc;
+    border-left: 6px solid #ffeb3b;
+    padding: 0.01em 16px;
+    color: #000000;
+}
+.w3-panel {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.chat-btn {
+    margin-top: 15px;
+}
+.chat .chat-header input {
+    width: auto;
+    background: transparent;
+    text-align: left;
+    border: 0;
+    padding: 0;
+    color: #fff;
+}
+.chat .chat-wrapp {
+    color: #000000;
+    overflow-y: scroll;
+    max-height: 50vh;
+    background-color: #e0e0de;
+}
+.chat .chat-wrapp .chat-content {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.chat .chat-wrapp .chat-content li {
+    margin-bottom: 10px;
+    width: 85%;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #fff;
+    position: relative;
+}
+.chat .chat-wrapp .chat-content li.left {
+    text-align: left;
+    float: left;
+}
+.chat .chat-wrapp .chat-content li.left .chat-body {
+    margin-left: 60px;
+}
+.chat .chat-wrapp .chat-content li.left:before {
+    width: 0;
+    height: 0;
+    content: "";
+    top: 0;
+    left: -10px;
+    position: absolute;
+    border-style: solid;
+    border-width: 0 13px 13px 0;
+    border-color: transparent #ffffff transparent transparent;
+}
+.chat .chat-wrapp .chat-content li.right {
+    text-align: right;
+    float: right;
+}
+.chat .chat-wrapp .chat-content li.right .chat-body {
+    margin-right: 60px;
+}
+.chat .chat-wrapp .chat-content li.right:before {
+    width: 0;
+    height: 0;
+    content: "";
+    top: 0;
+    right: -10px;
+    position: absolute;
+    border-style: solid;
+    border-width: 13px 13px 0 0;
+    border-color: #ffffff transparent transparent transparent;
+}
+.chat .chat-wrapp .chat-content li .chat-img {
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 12px;
+    color: #fff;
+}
+.chat .chat-wrapp .chat-content li .chat-img .img-circle {
+    max-width: 60px;
+    overflow: hidden;
+}
+.chat .chat-wrapp .chat-content li .chat-body div.message {
+    margin: 0;
+}
+.chat .chat-wrapp .chat-content li .chat-body div.message p {
+    display: inline;
+    margin: 0;
+    padding: 0 5px;
+}
+.chat .chat-wrapp .chat-content li .chat-body div.message:hover .deleteMessage {
+    opacity: 1;
+}
+.chat .chat-wrapp .chat-content li .chat-body div.message .deleteMessage {
+    margin-left: 5px;
+    cursor: pointer;
+    opacity: 0;
+    color: #000000;
+}
+.chat textarea.chat-textarea {
+    max-width: 100%;
+    resize: none;
+    min-height: 35px;
+}
+.chat #btn-chat {
+    padding: 24px 16px;
+}
+.nav-lang {
+    background-color: transparent;
+    padding: 10px 0;
+}
+.nav-lang--item a {
+    color: #fff;
+    transition: 0.3s all;
+    text-transform: uppercase;
+}
+.nav-lang--item a:hover {
+    color: #64c8ca;
+    background-color: transparent!important;
+}
+.nav-lang--item.active a {
+    background-color: #fff !important;
+    color: #000000 !important;
+}

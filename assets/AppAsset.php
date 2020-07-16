@@ -21,7 +21,7 @@ class AppAsset extends AssetBundle
         'css/site.css',
     ];
     public $js = [
-        'js/less.min.js',
+//        'js/less.min.js',
         'js/main.js'
     ];
     public $depends = [
