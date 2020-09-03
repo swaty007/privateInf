@@ -90,7 +90,7 @@ AppAsset::register($this);
         <?php endforeach;?>
     </ul>
 </div>
-<div class="wrap">
+<div class="wrap container">
     <div class="jumbotron">
         <a href="<?= Url::to(['site/index', 'language' => Yii::$app->language]);?>"><img src="/img/logo.png" alt="logo"></a>
         <h1 class="private-header"><?= Yii::t('app', 'Приватные сообщения');?></h1>
